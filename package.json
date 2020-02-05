@@ -1,0 +1,22 @@
+{
+  "name": "compressor-napoleon-xiii",
+  "version": "1.0.0",
+  "description": "### Compress File",
+  "bin": {
+    "zipper": "./index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fbw9dus/compressor-napoleon-xiii.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fbw9dus/compressor-napoleon-xiii/issues"
+  },
+  "homepage": "https://github.com/fbw9dus/compressor-napoleon-xiii#readme"
+}

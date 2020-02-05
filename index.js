@@ -1,3 +1,6 @@
+#!/usr/bin/env node
+
+
 // const  fs = require('fs')
 // const zlib = require('zlib')
 // const gzip = zlip.creatGzip()
@@ -14,7 +17,6 @@
 // })
 
 
-
 const zlib = require('zlib');
 const fs = require('fs');
 const path = require('path')
@@ -26,10 +28,10 @@ const args = process.argv.slice(2)
 if(args.length == 1){
 const sourcePath = path.resolve(args[0])
 const targetFileName =path.parse(sourcePath).dir + '/' + path.parse(sourcePath).base + '.gz'
-var zip = zlib.createGzip();
+const zip = zlib.createGzip();
 
-var read = fs.createReadStream(sourcePath);
-var write = fs.createWriteStream(targetFileName);
+const read = fs.createReadStream(sourcePath);
+const write = fs.createWriteStream(targetFileName);
 
 read.pipe(zip).pipe(write);	
 console.log("Zipped Successfully");		
@@ -38,10 +40,10 @@ console.log("Zipped Successfully");
 let sourcePath = 'input.txt'
 
 const targetFileName ='input.txt.gz'
-var zip = zlib.createGzip();
+const zip = zlib.createGzip();
 
-var read = fs.createReadStream(sourcePath);
-var write = fs.createWriteStream(targetFileName);
+const read = fs.createReadStream(sourcePath);
+const write = fs.createWriteStream(targetFileName);
 
 read.pipe(zip).pipe(write);	
 console.log("Zipped Successfully");		
